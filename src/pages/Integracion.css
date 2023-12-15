@@ -1,0 +1,39 @@
+.integracion-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .integracion-title {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .integracion-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .integracion-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .integracion-name {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .integracion-email {
+    color: #555;
+  }
+  

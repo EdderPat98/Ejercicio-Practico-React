@@ -1,0 +1,58 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .titulo {
+    text-align: center;
+    color: #333;
+  }
+  
+  .seccion-contacto {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .formulario {
+    flex: 1;
+  }
+  
+  .formulario-usuario {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formulario-usuario input {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .formulario-usuario input[type="submit"] {
+    background-color: #e74c3c;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .formulario-usuario input[type="submit"]:hover {
+    background-color: #c0392b;
+  }
+  
+  .tarjeta-usuario {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-usuario h3 {
+    color: #333;
+  }
+  
+  

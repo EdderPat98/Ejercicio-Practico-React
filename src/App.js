@@ -1,19 +1,21 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Layout  from "./pages/Layout";
-import About  from "./pages/About";
-import Home  from "./pages/Home";
+import Lista  from "./pages/Lista";
+import Contador  from "./pages/Contador";
 import Default  from "./pages/Default";
-import Dashboard  from "./pages/Dashboard";
+import Formulario  from "./pages/Formulario";
+import Integracion  from "./pages/Integracion";
 function App() {
   return (
     <div>
-      <h1>Routes</h1>
+    
       <Routes>
         <Route path="/" element={<Layout />}>
-           <Route path="about" element={<About />} />
-           <Route path="/" element={<Home />} />
-           <Route path="dashboard" element={<Dashboard />} />
+           <Route path="Lista" element={<Lista />} />
+           <Route path="/" element={<Contador />} />
+           <Route path="Formulario" element={<Formulario />} />
+           <Route path="Integracion" element={<Integracion />} />
            <Route path="*" element={<Default />} />
         </Route>
       </Routes>

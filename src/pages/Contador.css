@@ -1,0 +1,75 @@
+.contador-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contador-container h1,
+.contador-container h3,
+.contador-container p {
+  text-align: center;
+  color: #333;
+}
+
+.contador-container input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.contador-container button {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 16px;
+  background-color: #e74c3c;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.contador-container button:hover {
+  background-color: #c0392b;
+}
+
+.contador {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contador li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.contador li span {
+  flex-grow: 1;
+}
+
+.contador li button {
+  padding: 8px;
+  font-size: 14px;
+  background-color: #e74c3c;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.contador li button:hover {
+  background-color: #c0392b;
+}
