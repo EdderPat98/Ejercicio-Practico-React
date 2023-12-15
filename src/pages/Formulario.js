@@ -4,16 +4,21 @@ import './Formulario.css'; // Importa tu archivo de estilos CSS
 const Formulario = () => {
   const [nombre, setNombre] = useState('Usuario');
   const [correo, setCorreo] = useState('usuario@example.com');
+  const [listaUsuarios, setListaUsuarios] = useState([]);
 
   const manejarEnvioFormulario = (e) => {
     e.preventDefault();
-    setNombre(e.target.elements.nombre.value);
-    setCorreo(e.target.elements.correo.value);
+    const nuevoNombre = e.target.elements.nombre.value;
+    const nuevoCorreo = e.target.elements.correo.value;
+
+    // Actualiza el estado de nombre, correo y agrega el nuevo usuario a la lista
+    setNombre(nuevoNombre);
+    setCorreo(nuevoCorreo);
+    setListaUsuarios([...listaUsuarios, { nombre: nuevoNombre, correo: nuevoCorreo }]);
   };
 
   return (
     <div className="container">
-
       <h1 className="titulo">Formulario de Usuario</h1>
       <h3>Crea un formulario en React con campos de entrada para nombre y correo electrónico, y maneja los cambios en el estado.</h3>
       <div className='seccion-contacto'>
@@ -29,6 +34,16 @@ const Formulario = () => {
             <h3>Nombre: {nombre}</h3>
             <h3>Correo: {correo}</h3>
           </div>
+        </div>
+        <div className="lista-usuarios">
+          <h3>Listado de Usuarios:</h3>
+          <ul>
+            {listaUsuarios.map((usuario, index) => (
+              <li key={index}>
+                <strong>Nombre:</strong> {usuario.nombre}, <strong>Correo:</strong> {usuario.correo}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
