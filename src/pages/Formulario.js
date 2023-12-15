@@ -17,6 +17,13 @@ const Formulario = () => {
     setListaUsuarios([...listaUsuarios, { nombre: nuevoNombre, correo: nuevoCorreo }]);
   };
 
+  const eliminarUsuario = (index) => {
+    // Crea una copia de la listaUsuarios y elimina el usuario en la posición index
+    const nuevaListaUsuarios = [...listaUsuarios];
+    nuevaListaUsuarios.splice(index, 1);
+    setListaUsuarios(nuevaListaUsuarios);
+  };
+
   return (
     <div className="container">
       <h1 className="titulo">Formulario de Usuario</h1>
@@ -36,11 +43,12 @@ const Formulario = () => {
           </div>
         </div>
         <div className="lista-usuarios">
-          <h3>Listado de Usuarios:</h3>
+          <h3>Lista de Usuarios:</h3>
           <ul>
             {listaUsuarios.map((usuario, index) => (
               <li key={index}>
                 <strong>Nombre:</strong> {usuario.nombre}, <strong>Correo:</strong> {usuario.correo}
+                <button onClick={() => eliminarUsuario(index)}>Eliminar</button>
               </li>
             ))}
           </ul>
